@@ -1,10 +1,15 @@
-function getRandomBackroundColor() {
+function changeColor() {
     
-    var randomNumber = Math.floor(Math.random() * 5) + 1;
-    var colorElement = document.getElementById('colorElement');
-    colorElement.className = 'color' + randomNumber;
-  }
+  var randomNumber = getRandom(5)
+  var colorElement = document.getElementById('colorElement');
+  colorElement.className = 'color' + randomNumber;
+}
 
-  var colorButton = document.getElementById('colorButton');
-  colorButton.addEventListener('click', getRandomBackroundColor);
+var colorButton = document.getElementById('colorButton');
+colorButton.addEventListener('click', changeColor);
   
+function getRandom(limit) {
+
+  var randomNumber = Math.floor(Math.random() * limit) + 1;
+  return randomNumber
+}
