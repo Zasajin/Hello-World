@@ -1,4 +1,4 @@
-function getRandomColor() {
+function getRandomBackroundColor() {
     
     var randomNumber = Math.floor(Math.random() * 5) + 1;
     var colorElement = document.getElementById('colorElement');
@@ -6,5 +6,5 @@ function getRandomColor() {
   }
 
   var colorButton = document.getElementById('colorButton');
-  colorButton.addEventListener('click', getRandomColor);
+  colorButton.addEventListener('click', getRandomBackroundColor);
   
